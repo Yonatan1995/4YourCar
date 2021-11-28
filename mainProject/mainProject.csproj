@@ -1,0 +1,262 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{90D4118D-213B-4414-B954-7A79201B1593}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>mainProject</RootNamespace>
+    <AssemblyName>mainProject</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.6.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>..\packages\BouncyCastle.1.8.6.1\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.2, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13.2\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="addCar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addCar.Designer.cs">
+      <DependentUpon>addCar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addCustomer.Designer.cs">
+      <DependentUpon>addCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addPart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addPart.Designer.cs">
+      <DependentUpon>addPart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addUser.Designer.cs">
+      <DependentUpon>addUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addWorkCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addWorkCard.Designer.cs">
+      <DependentUpon>addWorkCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="allCars.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="allCars.Designer.cs">
+      <DependentUpon>allCars.cs</DependentUpon>
+    </Compile>
+    <Compile Include="allCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="allCustomer.Designer.cs">
+      <DependentUpon>allCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="allGarageWorkCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="allGarageWorkCard.Designer.cs">
+      <DependentUpon>allGarageWorkCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="allParts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="allParts.Designer.cs">
+      <DependentUpon>allParts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="allUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="allUsers.Designer.cs">
+      <DependentUpon>allUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="carDisable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="carDisable.Designer.cs">
+      <DependentUpon>carDisable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="closingWorkCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="closingWorkCard.Designer.cs">
+      <DependentUpon>closingWorkCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="managerHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="managerHome.Designer.cs">
+      <DependentUpon>managerHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mechanicHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mechanicHome.Designer.cs">
+      <DependentUpon>mechanicHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="myWorkCards.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="myWorkCards.Designer.cs">
+      <DependentUpon>myWorkCards.cs</DependentUpon>
+    </Compile>
+    <Compile Include="partsForWorkCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="partsForWorkCard.Designer.cs">
+      <DependentUpon>partsForWorkCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pricePerHourOfWork.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pricePerHourOfWork.Designer.cs">
+      <DependentUpon>pricePerHourOfWork.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="receptionistHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="receptionistHome.Designer.cs">
+      <DependentUpon>receptionistHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userStatistics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userStatistics.Designer.cs">
+      <DependentUpon>userStatistics.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="addCar.resx">
+      <DependentUpon>addCar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addCustomer.resx">
+      <DependentUpon>addCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addPart.resx">
+      <DependentUpon>addPart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addUser.resx">
+      <DependentUpon>addUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addWorkCard.resx">
+      <DependentUpon>addWorkCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="allCars.resx">
+      <DependentUpon>allCars.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="allCustomer.resx">
+      <DependentUpon>allCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="allGarageWorkCard.resx">
+      <DependentUpon>allGarageWorkCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="allParts.resx">
+      <DependentUpon>allParts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="allUsers.resx">
+      <DependentUpon>allUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="carDisable.resx">
+      <DependentUpon>carDisable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="closingWorkCard.resx">
+      <DependentUpon>closingWorkCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="managerHome.resx">
+      <DependentUpon>managerHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mechanicHome.resx">
+      <DependentUpon>mechanicHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="myWorkCards.resx">
+      <DependentUpon>myWorkCards.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="partsForWorkCard.resx">
+      <DependentUpon>partsForWorkCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pricePerHourOfWork.resx">
+      <DependentUpon>pricePerHourOfWork.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="receptionistHome.resx">
+      <DependentUpon>receptionistHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userStatistics.resx">
+      <DependentUpon>userStatistics.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
